@@ -37,7 +37,7 @@ jobs:
       - name: '🐍 Setup Python 3.11'
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.13'
       - name: '📂 Get Changed Files'
         id: files
         uses: Ana06/get-changed-files@v2.3.0
