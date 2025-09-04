@@ -16,7 +16,7 @@ pydantic = "<2"
 
 
 [tool.poetry.group.dev.dependencies]
-langchain-cli = ">=0.0.15"
+langchain-cli = "==0.0.37"
 
 [build-system]
 requires = ["poetry-core"]
