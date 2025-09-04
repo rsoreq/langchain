@@ -17,10 +17,10 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4
         with:
           path: langchain
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4
         with:
           repository: langchain-ai/langchain-api-docs-html
           path: langchain-api-docs-html
@@ -72,7 +72,7 @@ jobs:
           done
 
       - name: '🐍 Setup Python ${{ env.PYTHON_VERSION }}'
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         id: setup-python
         with:
           python-version: ${{ env.PYTHON_VERSION }}
@@ -114,7 +114,7 @@ jobs:
           rm -rf ../langchain-api-docs-html/_build/
 
       # https://github.com/marketplace/actions/add-commit
-      - uses: EndBug/add-and-commit@v9
+      - uses: EndBug/add-and-commit@a94899bca583c204427a224a7af87c02f9b325d5 # v9
         with:
           cwd: langchain-api-docs-html
           message: 'Update API docs build'
