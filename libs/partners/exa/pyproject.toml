@@ -34,7 +34,7 @@ test_integration = []
 typing = [
     "mypy<2.0,>=1.10",
     "langchain-core",
-    "pydantic>2.0,<2.10", # TODO: support 2.10
+    "pydantic>2.11,<2.12", # TODO: support 2.10
 ]
 
 
