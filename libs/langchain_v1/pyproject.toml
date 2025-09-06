@@ -62,7 +62,7 @@ test = [
 codespell = ["codespell<3.0.0,>=2.2.0"]
 lint = [
     "ruff<0.13,>=0.12.2",
-    "mypy<1.16,>=1.15",
+    "mypy<1.18,>=1.17",
 ]
 typing = [
     "types-toml>=0.10.8.20240310",
