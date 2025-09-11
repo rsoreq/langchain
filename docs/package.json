@@ -58,7 +58,7 @@
     "marked": "^12.0.1",
     "prettier": "^2.7.1",
     "supabase": "^1.200.3",
-    "typedoc": "^0.24.4",
+    "typedoc": "^0.28.0",
     "typedoc-plugin-markdown": "next",
     "yaml-loader": "^0.8.0"
   },
