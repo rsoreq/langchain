@@ -15,7 +15,7 @@ runs:
   using: composite
   steps:
     - name: Install uv and set the python version
-      uses: astral-sh/setup-uv@v5
+      uses: astral-sh/setup-uv@5a7eac68fb9809dea845d802897dc5c723910fa3 # v7
       with:
         version: ${{ env.UV_VERSION }}
         python-version: ${{ inputs.python-version }}
