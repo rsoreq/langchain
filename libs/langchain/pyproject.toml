@@ -63,7 +63,7 @@ test = [
     "requests-mock<2.0.0,>=1.11.0",
     "pytest-xdist<4.0.0,>=3.6.1",
     "blockbuster<1.6,>=1.5.18",
-    "cffi<1.17.2; python_version < \"3.10\"",
+    "cffi<2.1.2; python_version < \"3.10\"",
     "cffi; python_version >= \"3.10\"",
     "langchain-tests",
     "langchain-core",
@@ -87,7 +87,7 @@ test_integration = [
 ]
 lint = [
     "ruff<0.13,>=0.12.2",
-    "cffi<1.17.2; python_version < \"3.10\"",
+    "cffi<2.1.2; python_version < \"3.10\"",
     "cffi; python_version >= \"3.10\"",
 ]
 typing = [
