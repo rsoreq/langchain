@@ -1,4 +1,4 @@
-FROM python:3.11-slim
+FROM python:3.14-slim@sha256:9dc4ef3e628432af2237d1418908f5c6d4528e9f776aaa6e7c95c18854c86e48
 
 RUN pip install poetry==1.6.1
 
