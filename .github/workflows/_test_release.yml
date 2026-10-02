@@ -27,7 +27,7 @@ jobs:
       version: ${{ steps.check-version.outputs.version }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
       - name: '🐍 Set up Python + UV'
         uses: "./.github/actions/uv_setup"
@@ -50,7 +50,7 @@ jobs:
         working-directory: ${{ inputs.working-directory }}
 
       - name: '⬆️ Upload Build Artifacts'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: test-dist
           path: ${{ inputs.working-directory }}/dist/
@@ -83,15 +83,15 @@ jobs:
       id-token: write
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
-      - uses: actions/download-artifact@v5
+      - uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0 # v5
         with:
           name: test-dist
           path: ${{ inputs.working-directory }}/dist/
 
       - name: Publish to test PyPI
-        uses: pypa/gh-action-pypi-publish@release/v1
+        uses: pypa/gh-action-pypi-publish@dc37677b2e1c63e2034f94d8a5b11f265b73ba33 # release/v1
         with:
           packages-dir: ${{ inputs.working-directory }}/dist/
           verbose: true
